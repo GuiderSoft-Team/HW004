@@ -1,3 +1,17 @@
 public class MegaBytesConverter {
-    //TODO: Please open the readme.txt file and answer 3rd question.
+    public static void main(String[] args) {
+
+        printMegaBytesAndKiloBytes(5000);
+    }
+    public static void printMegaBytesAndKiloBytes(int kiloBytes){
+        int mb = kiloBytes/1024;
+        int kb2 = kiloBytes % 1024;
+
+        if(kiloBytes< 0){
+
+            System.out.println("Invalid Value");
+            System.exit(-1);
+        }
+        System.out.println(kiloBytes + " KB = " + mb + " MB and " + kb2 + " KB");
+    }
 }
