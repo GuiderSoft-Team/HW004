@@ -1,5 +1,5 @@
 public class LeapYear {
-    //TODO: Please open the readme.txt file and answer 4th question.
+
     public static void main(String[] args) {
         System.out.println(isLeapYear(1700));
         System.out.println(isLeapYear(1600));
