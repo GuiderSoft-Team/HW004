@@ -152,7 +152,7 @@ NOTE: 1 mile per hour is 1.609 kilometers per hour
 
    NOTE: The method isLeapYear needs to be defined as public static like we have been doing so far in the course.
 
-5. Write a method hasEqualSum with 3 parameters of type int.
+5. Write a method hasEqu with 3 parameters of type int.
 
    The method should return boolean and
    it needs to return true if the sum of the first and second parameter is equal to the third parameter.
