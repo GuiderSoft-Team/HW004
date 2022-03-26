@@ -6,30 +6,32 @@ public class LeapYear {
             if (year % 4 == 0) {
                 if (year % 100 == 0) {
                     if (year % 400 == 0) {
-                        System.out.println("The year is a leap year (it has 366 days).");
                         return true;
                     }
                 } else {
-                    System.out.println("The year is not a leap year (it has 365 days).");
                     return false;
                 }
             } else {
-                System.out.println("The year is not a leap year (it has 365 days).");
                 return false;
             }
             return true;
         } else {
-            System.out.println("the parameter is not in range (1-9999)");
             return false;
         }
     }
 
 
         public static void main (String[]args){
-            System.out.println(isLeapYear(-1600));
-            System.out.println(isLeapYear(1600));
-            System.out.println(isLeapYear(2017));
-            System.out.println(isLeapYear(2000));
+
+            int[] years={-1600,1600,2017,2000};
+            for (int i = 0; i < years.length; i++) {
+                if(isLeapYear(years[i])) {
+                    System.out.println(years[i]+" is a leap year (it has 366 days).");
+                }else{
+                    System.out.println(years[i]+" is not a leap year (it has 366 days).");
+                }
+            }
+
         }
 
 }
