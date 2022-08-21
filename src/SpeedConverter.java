@@ -12,7 +12,7 @@ public class SpeedConverter {
             double milesPerHour = 0;
             milesPerHour = Math.round(kilometersPerHour / 1.609);
 
-            System.out.println("....km/h=  "+milesPerHour+" "+"mi/h");
+            System.out.println(kilometersPerHour+"km/h=  "+milesPerHour+" "+"mi/h");
 
 
         }
