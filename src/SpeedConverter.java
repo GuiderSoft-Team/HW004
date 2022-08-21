@@ -1,20 +1,24 @@
 public class SpeedConverter {
-    public static long toMilesPerHour (double kilometersPerHour){
-        if(kilometersPerHour < 0) {
-            return -1;
-        }
-        return Math.round(kilometersPerHour / 1.609);
+    public static void main(String[] args) {
+        printConversion(25.42);
     }
+    public static void printConversion(double kilometersPerHour) {
 
-    public static void printConversion (double kilometersPerHour){
-        if(kilometersPerHour < 0) {
+        if (kilometersPerHour < 0) {
             System.out.println("Invalid Value");
-        } else {
-            long milesPerHours = toMilesPerHour(kilometersPerHour);
-            System.out.println(kilometersPerHour + " km/h = "+ milesPerHours +" mi/h");
-        }
-    }
 
+
+        } else {
+            double milesPerHour = 0;
+            milesPerHour = Math.round(kilometersPerHour / 1.609);
+
+            System.out.println("....km/h=  "+milesPerHour+" "+"mi/h");
+
+
+        }
+
+
+    }
 }
     //TODO: Please open the readme.txt file and answer 1st and 2nd questions.
   /*  1. Write a method called toMilesPerHour that has 1 parameter of type double with the name kilometersPerHour.
