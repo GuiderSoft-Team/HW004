@@ -1,23 +1,22 @@
 public class EqualSumChecker {
     public static void main(String[] args) {
-        double milesPerHour=0;
-        double kilometersPerHour=0;
-        milesPerHour=Math.round(kilometersPerHour / 1.609);
-        System.out.println("...."+"mi/h = "+"km/h= "+ toMilesPerHour (-5.6));
 
+        hasEgualSumChecker(1,1,1);
+        System.out.println(hasEgualSumChecker(1,1,2));
     }
 
-    public static long toMilesPerHour (double kilometersPerHour){
-        if(kilometersPerHour < 0) {
-            System.out.println("invalued value");
-            return -1;
+    public static boolean hasEgualSumChecker(int number1, int number2, int number3) {
+        if ((number1 + number2) == number3) {
+            return true;
+
         }else {
+            return false;
         }
-        return Math.round(kilometersPerHour / 1.609);
-        }
+
 
 
     }
+}
 
 
 
